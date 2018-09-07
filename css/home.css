@@ -1,0 +1,102 @@
+a {
+  color: black; }
+
+.nav {
+  display: grid;
+  grid-template-areas: "logo head_menu";
+  grid-template-rows: 70px;
+  padding-top: 15px;
+  grid-template-columns: 200px 1fr;
+  background: #fff;
+  -webkit-box-shadow: 0px 7px 24px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 24px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 24px -4px rgba(0, 0, 0, 0.75); }
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .logo img {
+    width: 45px;
+    height: 45px; }
+
+.head_menu {
+  grid-area: head_menu;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.head_menu_li {
+  margin-left: 25px; }
+
+.body_pages_home {
+  display: grid;
+  grid-template-areas: "nav nav nav" " . body_home .";
+  grid-template-columns: minmax(10px, 1fr) 1200px minmax(10px, 1fr); }
+
+.body_home {
+  grid-area: body_home; }
+
+.home_header {
+  display: grid;
+  grid-template-areas: "home_header_left home_header_right";
+  grid-template-columns: 2fr 3fr;
+  padding-top: 50px; }
+
+.home_header_left {
+  grid-area: home_header_left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.home_header_sale {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .home_header_sale img {
+    width: auto;
+    height: 130px; }
+
+.home_header_right {
+  grid-area: home_header_right; }
+
+.home_header_right_block {
+  grid-area: home_header_right_block;
+  display: grid;
+  grid-template-areas: "home_header_right_block_title" "home_header_right_block_text" "home_header_right_block_button"; }
+
+.home_header_right_block_title {
+  grid-area: home_header_right_block_title;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px; }
+
+.home_header_right_block_text {
+  grid-area: home_header_right_block_text;
+  font-size: 22px;
+  padding: 0 50px;
+  margin-bottom: 60px; }
+
+.home_header_right_block_button {
+  grid-area: home_header_right_block_button;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.home_header_right_block_button_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 120px;
+  height: 45px;
+  background: #fff;
+  border-radius: 5px;
+  border: #000 1px solid; }
+  .home_header_right_block_button_block P {
+    margin: auto; }
